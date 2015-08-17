@@ -1,0 +1,6 @@
+C:\MyLearn\Exam70483\CreateTypes\UseTypes\bin\Debug\UseTypes.exe.config
+C:\MyLearn\Exam70483\CreateTypes\UseTypes\bin\Debug\UseTypes.exe
+C:\MyLearn\Exam70483\CreateTypes\UseTypes\bin\Debug\UseTypes.pdb
+C:\MyLearn\Exam70483\CreateTypes\UseTypes\obj\Debug\UseTypes.csprojResolveAssemblyReference.cache
+C:\MyLearn\Exam70483\CreateTypes\UseTypes\obj\Debug\UseTypes.exe
+C:\MyLearn\Exam70483\CreateTypes\UseTypes\obj\Debug\UseTypes.pdb
