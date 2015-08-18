@@ -4,3 +4,9 @@ C:\MyLearn\Exam70483\CreateTypes\CreateTypes\bin\Debug\CreateTypes.pdb
 C:\MyLearn\Exam70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.csprojResolveAssemblyReference.cache
 C:\MyLearn\Exam70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.exe
 C:\MyLearn\Exam70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.pdb
+C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\bin\Debug\CreateTypes.exe.config
+C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\bin\Debug\CreateTypes.exe
+C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\bin\Debug\CreateTypes.pdb
+C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.csprojResolveAssemblyReference.cache
+C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.exe
+C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.pdb
