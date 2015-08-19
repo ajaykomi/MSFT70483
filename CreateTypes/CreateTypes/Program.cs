@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using CreateTypes.Structures;
 using CreateTypes.Enums;
+using CreateTypes.Constructors;
+using System.IO;
 
 namespace CreateTypes
 {
@@ -28,36 +30,46 @@ namespace CreateTypes
 
             #region Enums
 
-           // Enums are value types too. Enums are veryhandy when you declare some set of constants
-           //Usually it is best to define an enum directly within a namespace so that all classes in the namespace can access it with equal convenience. 
-           //However, an enum can also be nested within a class or struct.
-           Console.WriteLine("Please enter timezone from below");
-           foreach ( var val in Enum.GetValues(typeof(Timezones.MyTimezone)))
-           {
-               Console.WriteLine(val);
-           }
-          // Best to learn more on Enum class and it s methods, Enum.parse is most widely used method
-            Timezones.MyTimezone tz = (Timezones.MyTimezone)Enum.Parse(typeof(Timezones.MyTimezone), Console.ReadLine().ToUpper());
-            switch (tz)
-            {
-                case Timezones.MyTimezone.EST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Eastern Standard Time"));
-                    break;
-                case Timezones.MyTimezone.GMT: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Greenwich Standard Time"));
-                    break;
-                case Timezones.MyTimezone.PST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Pacific Standard Time"));
-                    break;
-                case Timezones.MyTimezone.CST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Central Standard Time"));
-                    break;
-                case Timezones.MyTimezone.IST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "India Standard Time"));
-                    break;
-                default: Console.WriteLine(DateTime.Now);
-                    break;
+          
+           //Console.WriteLine("Please enter timezone from below");
+           //foreach ( var val in Enum.GetValues(typeof(Timezones.MyTimezone)))
+           //{
+           //    Console.WriteLine(val);
+           //}
+         
+           // Timezones.MyTimezone tz = (Timezones.MyTimezone)Enum.Parse(typeof(Timezones.MyTimezone), Console.ReadLine().ToUpper());
+           // switch (tz)
+           // {
+           //     case Timezones.MyTimezone.EST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Eastern Standard Time"));
+           //         break;
+           //     case Timezones.MyTimezone.GMT: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Greenwich Standard Time"));
+           //         break;
+           //     case Timezones.MyTimezone.PST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Pacific Standard Time"));
+           //         break;
+           //     case Timezones.MyTimezone.CST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "Central Standard Time"));
+           //         break;
+           //     case Timezones.MyTimezone.IST: Console.WriteLine(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "India Standard Time"));
+           //         break;
+           //     default: Console.WriteLine(DateTime.Now);
+           //         break;
                 
-            }
-            Console.WriteLine("Converted to: " + tz);
-            Console.Read();
+           // }
+           // Console.WriteLine("Converted to: " + tz);
+           // Console.Read();
             #endregion
+            #region Extension methods
+              string status;
+              FFRestaurant ffres = new FFRestaurant();
+              ffres.ComboID = 1;
+              ffres.Meal = "Chicken Sandwich";
+              ffres.Drink = "Small soda";
+              ffres.Desert = "Vanila Ice Cream";
+              ffres.Price = 8.5M;
 
+              string sw = ffres.ToTextWriter(out status);
+              Console.WriteLine("FF Resturant class is converted to text file through extension method: \n" + sw +" order is " + status);
+          
+            #endregion
 
         }
 
