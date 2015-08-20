@@ -57,18 +57,43 @@ namespace CreateTypes
            // Console.WriteLine("Converted to: " + tz);
            // Console.Read();
             #endregion
-            #region Extension methods
-              string status;
-              FFRestaurant ffres = new FFRestaurant();
-              ffres.ComboID = 1;
-              ffres.Meal = "Chicken Sandwich";
-              ffres.Drink = "Small soda";
-              ffres.Desert = "Vanila Ice Cream";
-              ffres.Price = 8.5M;
 
-              string sw = ffres.ToTextWriter(out status);
-              Console.WriteLine("FF Resturant class is converted to text file through extension method: \n" + sw +" order is " + status);
+            #region Extension methods
+              //string status;
+              //FFRestaurant ffres = new FFRestaurant();
+              //ffres.ComboID = 1;
+              //ffres.Meal = "Chicken Sandwich";
+              //ffres.Drink = "Small soda";
+              //ffres.Desert = "Vanila Ice Cream";
+              //ffres.Price = 8.5M;
+
+              //string sw = ffres.ToTextWriter(out status);
+              //Console.WriteLine("FF Resturant class is converted to text file through extension method: \n" + sw +" order is " + status);
           
+            #endregion
+            #region OverrideMethods
+
+            string status = string.Empty;
+            FFRestaurant ffr = new FFRestaurant();
+            Console.WriteLine(string.Format("Basic 6 meals price is: {0}" , ffr.CalculatePrice(6, 8.5M)));
+            McDonalds mcd = new McDonalds();
+
+            Console.WriteLine(string.Format("Discount 6 meals price in Mcdonalds is: {0}", mcd.CalculatePrice(6, 8.5M)));
+
+          // Exammple of initiating object  and generic type
+            List<McDonalds> lstmcd = new List<McDonalds>
+            {
+                new McDonalds{ ComboID = 1, Desert="milkshake", Drink ="soda", Meal ="chicken burger", Price =7.5M},
+                new McDonalds {ComboID = 2, Desert ="Ice cream", Drink ="Smoothie", Meal="Wrap", Price= 10}
+            };
+
+           // foreach loop on list
+            foreach (McDonalds mcmealitem in lstmcd)
+            {
+                Console.WriteLine(mcmealitem.ToTextWriter(out status )); // used extension method
+            }
+            
+
             #endregion
 
         }

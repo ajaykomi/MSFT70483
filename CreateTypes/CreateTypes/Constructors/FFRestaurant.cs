@@ -28,5 +28,10 @@ namespace CreateTypes.Constructors
         {
             return price * numberofmeals;
         }
+
+        public virtual string returnstring()
+        {
+            return "something to test override";
+        }
     }
 }

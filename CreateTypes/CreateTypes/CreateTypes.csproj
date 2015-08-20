@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constructors\BurgerKing.cs" />
     <Compile Include="Constructors\FFRestaurant.cs" />
     <Compile Include="Constructors\McDonalds.cs" />
     <Compile Include="Enums\Timezones.cs" />
