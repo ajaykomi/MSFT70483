@@ -10,3 +10,9 @@ C:\MyProjects\MSFT70483\CreateTypes\UseTypes\bin\Debug\UseTypes.pdb
 C:\MyProjects\MSFT70483\CreateTypes\UseTypes\obj\Debug\UseTypes.csprojResolveAssemblyReference.cache
 C:\MyProjects\MSFT70483\CreateTypes\UseTypes\obj\Debug\UseTypes.exe
 C:\MyProjects\MSFT70483\CreateTypes\UseTypes\obj\Debug\UseTypes.pdb
+C:\MyGit\MSFT70483\CreateTypes\UseTypes\bin\Debug\UseTypes.exe.config
+C:\MyGit\MSFT70483\CreateTypes\UseTypes\bin\Debug\UseTypes.exe
+C:\MyGit\MSFT70483\CreateTypes\UseTypes\bin\Debug\UseTypes.pdb
+C:\MyGit\MSFT70483\CreateTypes\UseTypes\obj\Debug\UseTypes.csprojResolveAssemblyReference.cache
+C:\MyGit\MSFT70483\CreateTypes\UseTypes\obj\Debug\UseTypes.exe
+C:\MyGit\MSFT70483\CreateTypes\UseTypes\obj\Debug\UseTypes.pdb
