@@ -10,6 +10,7 @@ namespace StringsPlay
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(String.Concat(Players.dravid, Players.sachin));
         }
     }
 }
