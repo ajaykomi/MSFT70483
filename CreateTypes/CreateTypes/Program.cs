@@ -71,6 +71,7 @@ namespace CreateTypes
               //Console.WriteLine("FF Resturant class is converted to text file through extension method: \n" + sw +" order is " + status);
           
             #endregion
+
             #region OverrideMethods
 
             string status = string.Empty;
@@ -83,14 +84,15 @@ namespace CreateTypes
           // Exammple of initiating object  and generic type
             List<McDonalds> lstmcd = new List<McDonalds>
             {
-                new McDonalds{ ComboID = 1, Desert="milkshake", Drink ="soda", Meal ="chicken burger", Price =7.5M},
+                new McDonalds{ ComboID = 1, Desert="Milkshake", Drink ="soda", Meal ="chicken burger", Price =7.5M},
                 new McDonalds {ComboID = 2, Desert ="Ice cream", Drink ="Smoothie", Meal="Wrap", Price= 10}
             };
 
            // foreach loop on list
+            lstmcd.OrderBy(l => l.Desert);
             foreach (McDonalds mcmealitem in lstmcd)
             {
-                Console.WriteLine(mcmealitem.ToTextWriter(out status )); // used extension method
+                Console.WriteLine(mcmealitem.ToTextWriter(out status)); // used extension method
             }
             
 
