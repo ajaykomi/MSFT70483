@@ -12,3 +12,11 @@ C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.exe
 C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.pdb
 C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\bin\Debug\Newtonsoft.Json.dll
 C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\bin\Debug\Newtonsoft.Json.xml
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\bin\Debug\CreateTypes.exe.config
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.exe
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.pdb
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\bin\Debug\CreateTypes.exe
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\bin\Debug\CreateTypes.pdb
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\bin\Debug\Newtonsoft.Json.dll
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\bin\Debug\Newtonsoft.Json.xml
+C:\MyGit\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.csprojResolveAssemblyReference.cache
