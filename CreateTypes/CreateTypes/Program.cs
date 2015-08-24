@@ -7,6 +7,8 @@ using CreateTypes.Structures;
 using CreateTypes.Enums;
 using CreateTypes.Constructors;
 using System.IO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace CreateTypes
 {
@@ -74,6 +76,7 @@ namespace CreateTypes
 
             #region OverrideMethods
 
+<<<<<<< HEAD
             string status = string.Empty;
             FFRestaurant ffr = new FFRestaurant();
             Console.WriteLine(string.Format("Basic 6 meals price is: {0}" , ffr.CalculatePrice(6, 8.5M)));
@@ -94,12 +97,57 @@ namespace CreateTypes
             {
                 Console.WriteLine(mcmealitem.ToTextWriter(out status)); // used extension method
             }
+=======
+           // string status = string.Empty;
+           // FFRestaurant ffr = new FFRestaurant();
+           // Console.WriteLine(string.Format("Basic 6 meals price is: {0}" , ffr.CalculatePrice(6, 8.5M)));
+           // McDonalds mcd = new McDonalds();
+
+           // Console.WriteLine(string.Format("Discount 6 meals price in Mcdonalds is: {0}", mcd.CalculatePrice(6, 8.5M)));
+
+          
+           // List<McDonalds> lstmcd = new List<McDonalds>
+           // {
+           //     new McDonalds{ ComboID = 1, Desert="milkshake", Drink ="soda", Meal ="chicken burger", Price =7.5M},
+           //     new McDonalds {ComboID = 2, Desert ="Ice cream", Drink ="Smoothie", Meal="Wrap", Price= 10}
+           // };
+
+           //// foreach loop on list
+           // foreach (McDonalds mcmealitem in lstmcd)
+           // {
+           //     Console.WriteLine(mcmealitem.ToTextWriter(out status )); // used extension method
+           // }
+>>>>>>> 8730204964c61c18f53ceba97dd917efad182eae
             
 
             #endregion
 
+            #region Constructors
+            //Invoking by new kwyword
+            BurgerKing bg = new BurgerKing();
+            Console.WriteLine(bg._guid);
+
+            var bgtype = typeof(BurgerKing);
+            Console.WriteLine("Type of burger king class is: " + bgtype);
+            BurgerKing instance = (BurgerKing) Activator.CreateInstance(bgtype);
+            Console.WriteLine(instance._guid);
+
+          // Invoking by getting the constructor info but this is not a good way to do sice lesser performance
+            var constructor = bgtype.GetConstructor(Type.EmptyTypes);
+            var cinstance = constructor.Invoke(new object[0]);
+            Console.WriteLine(instance._guid);
+
+            var genericinstance = createinstance<BurgerKing>();
+            Console.WriteLine("Instantiating a constructor of type generic: " + genericinstance._guid);
+            
+            #endregion
+
         }
 
+      public static T createinstance<T>() where T: new()
+      {
+          return new T();
+      }
         
     }
 }
