@@ -51,6 +51,8 @@
     <Compile Include="Constructors\McDonalds.cs" />
     <Compile Include="Enums\Timezones.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="IndexedProperties\Comment.cs" />
+    <Compile Include="IndexedProperties\CommentDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structures\CalcStruct.cs" />

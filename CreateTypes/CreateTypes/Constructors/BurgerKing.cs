@@ -11,7 +11,8 @@ namespace CreateTypes.Constructors
        //  Implementing diffrent types of constructors invoking
         public Guid _guid;
 
-        public BurgerKing(){
+        public BurgerKing()
+        {
             this._guid = Guid.NewGuid();
         }
 
