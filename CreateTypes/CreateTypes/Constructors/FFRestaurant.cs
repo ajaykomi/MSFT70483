@@ -29,10 +29,7 @@ namespace CreateTypes.Constructors
             return price * numberofmeals;
         }
 
-        public abstract decimal CalculatePrice(int numberofmeals, decimal price)
-        {
-            return price * numberofmeals;
-        }
+ 
 
         public virtual string returnstring()
         {

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 using CreateTypes.Structures;
 using CreateTypes.Enums;
 using CreateTypes.Constructors;
+using CreateTypes.IndexedProperties;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections;
 
 
 namespace CreateTypes
@@ -76,28 +78,7 @@ namespace CreateTypes
 
             #region OverrideMethods
 
-<<<<<<< HEAD
-            string status = string.Empty;
-            FFRestaurant ffr = new FFRestaurant();
-            Console.WriteLine(string.Format("Basic 6 meals price is: {0}" , ffr.CalculatePrice(6, 8.5M)));
-            McDonalds mcd = new McDonalds();
 
-            Console.WriteLine(string.Format("Discount 6 meals price in Mcdonalds is: {0}", mcd.CalculatePrice(6, 8.5M)));
-
-          // Exammple of initiating object  and generic type
-            List<McDonalds> lstmcd = new List<McDonalds>
-            {
-                new McDonalds{ ComboID = 1, Desert="Milkshake", Drink ="soda", Meal ="chicken burger", Price =7.5M},
-                new McDonalds {ComboID = 2, Desert ="Ice cream", Drink ="Smoothie", Meal="Wrap", Price= 10}
-            };
-
-           // foreach loop on list
-            lstmcd.OrderBy(l => l.Desert);
-            foreach (McDonalds mcmealitem in lstmcd)
-            {
-                Console.WriteLine(mcmealitem.ToTextWriter(out status)); // used extension method
-            }
-=======
            // string status = string.Empty;
            // FFRestaurant ffr = new FFRestaurant();
            // Console.WriteLine(string.Format("Basic 6 meals price is: {0}" , ffr.CalculatePrice(6, 8.5M)));
@@ -117,7 +98,7 @@ namespace CreateTypes
            // {
            //     Console.WriteLine(mcmealitem.ToTextWriter(out status )); // used extension method
            // }
->>>>>>> 8730204964c61c18f53ceba97dd917efad182eae
+
             
 
             #endregion
@@ -141,6 +122,19 @@ namespace CreateTypes
             Console.WriteLine("Instantiating a constructor of type generic: " + genericinstance._guid);
             
             #endregion
+
+            #region Indexed Properties
+            CommentDB commentdb = new CommentDB();
+           // Console.WriteLine(commentdb[0].blogid + " Comment is  " + commentdb[0].Commenttext + " at " + commentdb[0].Commentdate);
+            Console.WriteLine(commentdb["SKU1234"]);
+
+            #endregion
+
+            ArrayList myAL = new ArrayList();
+            myAL.Add("Hello");
+            myAL.Add("World");
+            myAL.Add("!");
+        
 
         }
 
