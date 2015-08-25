@@ -1,0 +1,5 @@
+C:\MyProjects\MSFT70483\CreateTypes\InterfacesImplementation\bin\Debug\InterfacesImplementation.exe.config
+C:\MyProjects\MSFT70483\CreateTypes\InterfacesImplementation\bin\Debug\InterfacesImplementation.exe
+C:\MyProjects\MSFT70483\CreateTypes\InterfacesImplementation\bin\Debug\InterfacesImplementation.pdb
+C:\MyProjects\MSFT70483\CreateTypes\InterfacesImplementation\obj\Debug\InterfacesImplementation.exe
+C:\MyProjects\MSFT70483\CreateTypes\InterfacesImplementation\obj\Debug\InterfacesImplementation.pdb

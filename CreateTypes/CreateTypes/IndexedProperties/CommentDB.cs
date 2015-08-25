@@ -17,8 +17,7 @@ namespace CreateTypes.IndexedProperties
             {"SKU1235", 15.0},
             {"SKU1236", 20.0}
         };
-        
-        
+       
         public CommentDB()
         {
             List<Comment> commentdb = new List<Comment>{
@@ -33,7 +32,8 @@ namespace CreateTypes.IndexedProperties
             return new Comment(id, comment, commentdate);
         }
 
-        // This is how to denote a property that can be accessed witht he index
+        // This is how to denote a property that can be accessed with the index.. but the below code is not an ideal since it is instatiating a constructor that 
+        // creates list of objects and can not be retrieved by its index.
         public Comment this[int id] 
         { 
             get 

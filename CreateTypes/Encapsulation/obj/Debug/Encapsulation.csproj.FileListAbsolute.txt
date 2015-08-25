@@ -1,0 +1,8 @@
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\bin\Debug\Encapsulation.exe.config
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\bin\Debug\Encapsulation.exe
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\bin\Debug\Encapsulation.pdb
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Interop.Acrobat.dll
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Interop.ActiveReportsRTFExport.dll
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Encapsulation.csproj.ResolveComReference.cache
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Encapsulation.exe
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Encapsulation.pdb
