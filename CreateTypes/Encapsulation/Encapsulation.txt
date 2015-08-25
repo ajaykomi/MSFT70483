@@ -1,0 +1,12 @@
+﻿Encapsulation is to enclose the scope of few elements in an object to enable the programmer to implement desired level of abstraction for the particular 
+physical or logical package.
+
+C# supports following access modifiers
+
+public
+private : Only methods of the same class can access its private members. Even an instance of a class or a classs in the same namespace cannot access its private members.
+protected: Protected access specifier allows a child class to access the member variables and member functions of its base class 
+internal: Internal access specifier allows a class to expose its member variables and member functions to other functions and objects in the current assembly.
+protected internal
+
+Further we will see each one with examples (in the code module) and determine the order of access level from highest access to the lowest access modifier

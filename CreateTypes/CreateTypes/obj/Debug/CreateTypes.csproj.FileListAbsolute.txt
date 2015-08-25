@@ -19,4 +19,3 @@ C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\bin\Debug\Newtonsoft.Json.dll
 C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\bin\Debug\Newtonsoft.Json.xml
 C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.exe
 C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.pdb
-C:\MyProjects\MSFT70483\CreateTypes\CreateTypes\obj\Debug\CreateTypes.csprojResolveAssemblyReference.cache

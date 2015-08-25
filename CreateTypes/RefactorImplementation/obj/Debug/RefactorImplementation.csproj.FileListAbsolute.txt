@@ -1,0 +1,5 @@
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\bin\Debug\RefactorImplementation.exe.config
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\bin\Debug\RefactorImplementation.exe
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\bin\Debug\RefactorImplementation.pdb
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\obj\Debug\RefactorImplementation.exe
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\obj\Debug\RefactorImplementation.pdb
