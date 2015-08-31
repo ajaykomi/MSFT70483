@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Refactor.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Encapsulation\Encapsulation.csproj">
+      <Project>{cce084aa-f3dc-4e0d-9b3b-9492ddb36759}</Project>
+      <Name>Encapsulation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

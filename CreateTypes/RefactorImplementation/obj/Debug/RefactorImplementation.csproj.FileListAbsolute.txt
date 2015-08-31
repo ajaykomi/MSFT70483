@@ -3,3 +3,6 @@ C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\bin\Debug\RefactorImp
 C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\bin\Debug\RefactorImplementation.pdb
 C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\obj\Debug\RefactorImplementation.exe
 C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\obj\Debug\RefactorImplementation.pdb
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\bin\Debug\Encapsulation.exe
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\bin\Debug\Encapsulation.pdb
+C:\MyProjects\MSFT70483\CreateTypes\RefactorImplementation\obj\Debug\RefactorImplementation.csprojResolveAssemblyReference.cache
