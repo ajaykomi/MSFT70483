@@ -16,5 +16,8 @@ namespace CreateTypes.Constructors
             this._guid = Guid.NewGuid();
         }
 
+        public BurgerKing() :this(null) {} // This is another type of constuctor that call the constructor in the same class
+        public BurgerKing(string name){}
+
     }
 }

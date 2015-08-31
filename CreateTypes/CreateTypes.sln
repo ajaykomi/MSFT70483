@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesImplementation", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorImplementation", "RefactorImplementation\RefactorImplementation.csproj", "{20A9E2B5-634B-441B-A054-80116448328B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGeneration", "CodeGeneration\CodeGeneration.csproj", "{87C28CA6-1672-4578-8B84-743DC314CF31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{20A9E2B5-634B-441B-A054-80116448328B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20A9E2B5-634B-441B-A054-80116448328B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20A9E2B5-634B-441B-A054-80116448328B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C28CA6-1672-4578-8B84-743DC314CF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C28CA6-1672-4578-8B84-743DC314CF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C28CA6-1672-4578-8B84-743DC314CF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C28CA6-1672-4578-8B84-743DC314CF31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
