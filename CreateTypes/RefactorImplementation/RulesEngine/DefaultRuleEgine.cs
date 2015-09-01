@@ -10,7 +10,7 @@ namespace RefactorImplementation.RulesEngine
 {
     public class DefaultRuleEngine<T> : RuleEngineBase<T>, IRuleEngine<T>
     {
-        
+
         public List<BrokenRule> Validate(T value)
         {
             List<BrokenRule> results = new List<BrokenRule>();
@@ -45,7 +45,7 @@ namespace RefactorImplementation.RulesEngine
                 }
                 Rules[valprop.Name] = lstattributes;
             }
-           
+
         }
     }
 }
