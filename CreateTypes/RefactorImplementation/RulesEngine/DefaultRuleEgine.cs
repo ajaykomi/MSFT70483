@@ -8,11 +8,27 @@ using RefactorImplementation.Rules;
 
 namespace RefactorImplementation.RulesEngine
 {
-    public class DefaultRuleEgine<T> : RuleEngineBase<T>, IRuleEngine<T>
+    public class DefaultRuleEngine<T> : RuleEngineBase<T>, IRuleEngine<T>
     {
+        
         public List<BrokenRule> Validate(T value)
         {
-            throw new NotImplementedException();
+            List<BrokenRule> results = new List<BrokenRule>();
+
+            PropertyInfo[] props = value.GetType().GetProperties();
+            foreach (PropertyInfo prop in props)
+            {
+                var rules = Rules[prop.Name];
+                foreach (ValidationAtrribute rule in rules)
+                {
+                    var ruleResult = rule.Validate(prop.GetValue(value), new ValidationContext { SourceObject = value });
+                    if (ruleResult.IsBroken)
+                    {
+                        results.Add(ruleResult);
+                    }
+                }
+            }
+            return results;
         }
 
         public override void BuildRuleSet()
@@ -22,8 +38,14 @@ namespace RefactorImplementation.RulesEngine
             foreach (PropertyInfo valprop in valprops)
             {
                 var ruleset = valprop.GetCustomAttributes(typeof(ValidationAtrribute), true);
+                List<ValidationAtrribute> lstattributes = new List<ValidationAtrribute>();
+                foreach (var valattr in ruleset)
+                {
+                    lstattributes.Add((ValidationAtrribute)valattr);
+                }
+                Rules[valprop.Name] = lstattributes;
             }
-           //throw new NotImplementedException();
+           
         }
     }
 }

@@ -10,8 +10,3 @@ C:\MyGit\MSFT70483\CreateTypes\StringsPlay\bin\Debug\StringsPlay.pdb
 C:\MyGit\MSFT70483\CreateTypes\StringsPlay\obj\Debug\StringsPlay.csprojResolveAssemblyReference.cache
 C:\MyGit\MSFT70483\CreateTypes\StringsPlay\obj\Debug\StringsPlay.exe
 C:\MyGit\MSFT70483\CreateTypes\StringsPlay\obj\Debug\StringsPlay.pdb
-C:\MyProjects\MSFT70483\CreateTypes\StringsPlay\bin\Debug\StringsPlay.exe.config
-C:\MyProjects\MSFT70483\CreateTypes\StringsPlay\bin\Debug\StringsPlay.exe
-C:\MyProjects\MSFT70483\CreateTypes\StringsPlay\bin\Debug\StringsPlay.pdb
-C:\MyProjects\MSFT70483\CreateTypes\StringsPlay\obj\Debug\StringsPlay.exe
-C:\MyProjects\MSFT70483\CreateTypes\StringsPlay\obj\Debug\StringsPlay.pdb

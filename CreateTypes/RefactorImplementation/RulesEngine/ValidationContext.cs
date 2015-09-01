@@ -8,9 +8,11 @@ namespace RefactorImplementation.RulesEngine
 {
    public class ValidationContext
     {
+       public object SourceObject { get; set; }
        public ValidationContext()
        {
 
+           
        }
     }
 }

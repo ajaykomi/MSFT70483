@@ -8,7 +8,7 @@ using RefactorImplementation.RulesEngine;
 
 namespace RefactorImplementation.Rules
 {
-    public abstract class ValidationAtrribute
+    public abstract class ValidationAtrribute : Attribute
     {
         public string Name { get; set; }
         public string Message { get; set; }

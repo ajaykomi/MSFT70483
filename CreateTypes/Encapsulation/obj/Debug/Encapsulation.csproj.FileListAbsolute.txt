@@ -6,3 +6,4 @@ C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Interop.ActiveReport
 C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Encapsulation.csproj.ResolveComReference.cache
 C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Encapsulation.exe
 C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Encapsulation.pdb
+C:\MyProjects\MSFT70483\CreateTypes\Encapsulation\obj\Debug\Encapsulation.csprojResolveAssemblyReference.cache
