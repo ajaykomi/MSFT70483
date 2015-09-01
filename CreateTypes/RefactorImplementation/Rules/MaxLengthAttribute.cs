@@ -13,9 +13,9 @@ namespace RefactorImplementation.Rules
         public string Message { get; set; }
         public int MaxLength { get; set; }
 
-        public MaxLengthAttribute() : base() {}
+        public MaxLengthAttribute() : base() { }
 
-        public MaxLengthAttribute(string name, string message, int maxlen) : base( name, message)
+        public MaxLengthAttribute(string name, string message, int maxlen) : base(name, message)
         {
             this.Name = message;
             this.Message = message;

@@ -28,6 +28,21 @@ namespace InterfacesImplementation
             Console.WriteLine(isenstud.calculatepercentage(872));
 
             Console.WriteLine(ijunstud.calculatepercentage(420));
+
+
+
+            List<IStudent> lstStudents = new List<IStudent>();
+            lstStudents.Add(new SeniorStudent {name ="Bob", grade = 'A' });
+            lstStudents.Add(new SeniorStudent { name = "Adam", grade = 'B' });
+            lstStudents.Add(new SeniorStudent { name = "Charlie", grade = 'A' });
+            lstStudents.Add(new SeniorStudent { name = "David", grade = 'A' });
+            lstStudents.Add(new SeniorStudent { name = "Abhi", grade = 'C' });
+            lstStudents.Sort();
+            foreach (IStudent student in lstStudents)
+            {
+                Console.WriteLine(student.name);
+            }
         }
     }
 }
+

@@ -26,20 +26,30 @@ namespace InterfacesImplementation.Classes
 
          float IStudent.calculatepercentage(int marks)
         {
-            return (marks / 470) * 100;
+            return ((float)marks / 470) * 100;
         }
 
         bool IStudent.istoprank(int marks)
         {
             return (this as IStudent).calculatepercentage(marks) > 80 ? true : false;
-            
         }
-
-
 
         void IDisposable.Dispose()
         {
  	        m_key.Dispose();
         }
-}
+
+
+        public string name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+    }
 }

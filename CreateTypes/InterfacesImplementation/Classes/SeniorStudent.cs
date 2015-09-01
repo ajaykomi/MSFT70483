@@ -6,32 +6,31 @@ using System.Threading.Tasks;
 
 namespace InterfacesImplementation.Classes
 {
-    class SeniorStudent : IStudent
+    class SeniorStudent : IStudent, IComparable
     {
+        public string name { get; set; }
 
         // implement interface implicitly
-        public char grade
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public char grade { get; set; }
 
         public float calculatepercentage(int marks)
         {
-            return (marks / 1000) * 100;
+            return ((float)marks / 1000) * 100;
             //throw new NotImplementedException();
         }
 
         public bool istoprank(int marks)
         {
             return calculatepercentage(marks) > 80 ? true : false;
-            throw new NotImplementedException();
+        
+        }
+
+
+        public int CompareTo(object obj)
+        {
+            SeniorStudent student = obj as SeniorStudent;
+            return this.name.CompareTo(student.name);
+            
         }
     }
 }
