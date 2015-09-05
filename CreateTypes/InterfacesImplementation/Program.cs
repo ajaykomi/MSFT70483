@@ -12,6 +12,8 @@ namespace InterfacesImplementation
     {
         static void Main(string[] args)
         {
+
+
             // Instantiating by class names
             SeniorStudent senstud = new SeniorStudent();
             JuniorStudent junstud = new JuniorStudent();
@@ -26,10 +28,7 @@ namespace InterfacesImplementation
             IStudent ijunstud = new JuniorStudent();
 
             Console.WriteLine(isenstud.calculatepercentage(872));
-
             Console.WriteLine(ijunstud.calculatepercentage(420));
-
-
 
             List<IStudent> lstStudents = new List<IStudent>();
             lstStudents.Add(new SeniorStudent {name ="Bob", grade = 'A' });
@@ -38,6 +37,7 @@ namespace InterfacesImplementation
             lstStudents.Add(new SeniorStudent { name = "David", grade = 'A' });
             lstStudents.Add(new SeniorStudent { name = "Abhi", grade = 'C' });
             lstStudents.Sort();
+             //lstStudents= lstStudents.OrderBy(x => x.name).ToList(); // BTW This is way to sort the list by using the lamda functions
             foreach (IStudent student in lstStudents)
             {
                 Console.WriteLine(student.name);

@@ -11,7 +11,7 @@ namespace InterfacesImplementation.Classes
     {
         // Interface implemented explicitly
         RegistryKey m_key;
-
+        
         char IStudent.grade
         {
             get
@@ -24,19 +24,21 @@ namespace InterfacesImplementation.Classes
             }
         }
 
-         float IStudent.calculatepercentage(int marks)
+        float IStudent.calculatepercentage(int marks)
         {
             return ((float)marks / 470) * 100;
         }
 
         bool IStudent.istoprank(int marks)
         {
+
             return (this as IStudent).calculatepercentage(marks) > 80 ? true : false;
         }
 
         void IDisposable.Dispose()
         {
- 	        m_key.Dispose();
+            m_key.Dispose();
+            
         }
 
 
@@ -51,5 +53,6 @@ namespace InterfacesImplementation.Classes
                 throw new NotImplementedException();
             }
         }
+        
     }
 }
