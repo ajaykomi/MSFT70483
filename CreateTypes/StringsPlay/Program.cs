@@ -10,6 +10,7 @@ namespace StringsPlay
     {
         static void Main(string[] args)
         {
+            
             List<string> strList = new List<string>();
             string sample = "The dynamic type enables the operations in which it occurs to bypass compile-time type checking. Instead, these operations are resolved at run time";
             string[] strsample = sample.Split(' ');
@@ -19,13 +20,13 @@ namespace StringsPlay
             }
             string[] strarray = new string[]{"When", "Where","How"};
             
-        
             Console.WriteLine(string.Join("; ", strarray));  // join example
             Console.WriteLine(string.Join(";", strList.ToArray())); // join and toarray example
             Console.WriteLine(String.Concat(Players.dravid, Players.sachin)); // concat example
             Console.WriteLine(sample.ToUpperInvariant());
             Console.WriteLine(strsample.Aggregate((work,next)=> (next +' '+ work))); // aggregate extension methods
             Console.ReadKey();
+            
         }
     }
 }

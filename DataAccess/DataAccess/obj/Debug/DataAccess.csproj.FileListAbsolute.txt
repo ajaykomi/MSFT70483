@@ -1,0 +1,5 @@
+C:\MyProjects\MSFT70483\DataAccess\DataAccess\bin\DataAccess.dll
+C:\MyProjects\MSFT70483\DataAccess\DataAccess\bin\DataAccess.pdb
+C:\MyProjects\MSFT70483\DataAccess\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\MyProjects\MSFT70483\DataAccess\DataAccess\obj\Debug\DataAccess.dll
+C:\MyProjects\MSFT70483\DataAccess\DataAccess\obj\Debug\DataAccess.pdb

@@ -8,6 +8,11 @@ namespace InterfacesImplementation.Classes
 {
     class SeniorStudent : IStudent, IComparable
     {
+       
+        public SeniorStudent()
+        {
+
+        }
         public string name { get; set; }
 
         // implement interface implicitly
@@ -32,5 +37,6 @@ namespace InterfacesImplementation.Classes
             return this.name.CompareTo(student.name);
             
         }
+
     }
 }
