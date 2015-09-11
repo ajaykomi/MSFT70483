@@ -12,9 +12,22 @@ namespace DataAccess
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string writetotext = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet magna.";
             string curdirectory=  Directory.GetCurrentDirectory();
-            File.Open(curdirectory, FileMode.OpenOrCreate, FileAccess.Read);
-            File.Create(curdirectory,1531, FileOptions.None);
+            string cdirectory = @"C:\MyProjects";
+           string path =  Path.Combine(cdirectory, "textfile1.txt");
+
+            var user = System.Security.Principal.WindowsIdentity.GetCurrent().User;
+            var userName = user.Translate(typeof(System.Security.Principal.NTAccount));
+            StreamWriter sw = new StreamWriter(path, true);
+            using (sw)
+            {
+                 sw.WriteLine(writetotext);
+
+            }
+           
+            //File.Open(cdirectory, FileMode.OpenOrCreate, FileAccess.Read);
+            //File.Create(curdirectory,1531, FileOptions.None);
 
         }
     }
