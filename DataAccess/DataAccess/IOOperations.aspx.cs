@@ -12,10 +12,27 @@ namespace DataAccess
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string curdirectory=  Directory.GetCurrentDirectory();
-            File.Open(curdirectory, FileMode.OpenOrCreate, FileAccess.Read);
-            File.Create(curdirectory,1531, FileOptions.None);
 
+
+        }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnCurrentDir_Click(object sender, EventArgs e)
+        {
+            string curdirectory = Directory.GetCurrentDirectory();
+            lblMessage.Text = curdirectory;
+            string filepath = Path.Combine("C:\\", txtfileName.Text);
+
+            File.WriteAllText(filepath, txtComments.Text);
+            //if (!File.Exists(filepath))
+            //{
+            //    File.Create(filepath);
+            //    File.WriteAllText(filepath, txtComments.Text);
+            //}
         }
     }
 }

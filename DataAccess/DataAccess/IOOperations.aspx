@@ -8,9 +8,18 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+
+        <div>
+            <asp:Label> Comments</asp:Label>
+            <asp:TextBox ID="txtComments" runat="server" TextMode="MultiLine"></asp:TextBox><br />
+            <asp:TextBox runat="server" ID="txtfileName" />
+        </div>
+        <div>
+            <asp:Button Text="Write to Currect Directory" runat="server" ID="btnCurrentDir" OnClick="btnCurrentDir_Click" />
+        </div>
+        <div>
+            <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
+        </div>
     </form>
 </body>
 </html>
